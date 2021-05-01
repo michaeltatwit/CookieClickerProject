@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main"> 
+   <children>
+      <ImageView disable="true" fitHeight="508.0" fitWidth="800.0" focusTraversable="true" opacity="0.65">
+         <image>
+            <Image url="@cookiebackground.png" />
+         </image>
+      </ImageView>
+      <BorderPane opacity="0.91" prefHeight="507.0" prefWidth="800.0">
+         <top>
+            <Text fx:id="myText" stroke="WHITE" strokeType="OUTSIDE" text="COOKIE CLICKER!" textAlignment="CENTER" wrappingWidth="613.1448230743408" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="28.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets top="200.0" />
+               </BorderPane.margin>
+            </Text>
+         </top>
+         <bottom>
+            <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="131.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <center>
+                  <Button fx:id="myButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="START" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <BorderPane.margin>
+                        <Insets top="50.0" />
+                     </BorderPane.margin>
+                  </Button>
+               </center>
+            </BorderPane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
